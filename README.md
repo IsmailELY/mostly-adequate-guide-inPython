@@ -14,12 +14,12 @@ The repository is organized by chapters, with each chapter covered in a Jupyter 
 1. Python translations of JavaScript examples from the book.
 2. Explanatory notes to clarify key concepts and their Python implementations.
 
-Example structure:
+Example structure: \
 chapters/ \
-    ├── chapter-01.ipynb \
-    ├── chapter-02.ipynb \
-    ├── chapter-03.ipynb \
-    ... \
+&nbsp;├── chapter-01.ipynb \
+&nbsp;├── chapter-02.ipynb \
+&nbsp;├── chapter-03.ipynb \
+&nbsp;...
 
 ## Dependencies
 - **Python 3.9+**: Ensure you have Python installed on your machine.
