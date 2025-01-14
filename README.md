@@ -2,7 +2,7 @@
 
 This repository is a personal project aimed at converting all the JavaScript examples from **[Professor Frisby's Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide)** into Python. The book is an excellent introduction to functional programming concepts, and this project seeks to bridge its knowledge to Python enthusiasts.
 
-![Project Logo](images/cover.png){: style="width: 300px; display: block; margin: 0 auto;"}
+![Project Logo](images/cover.png)
 
 ## Purpose
 The main goals are to:
