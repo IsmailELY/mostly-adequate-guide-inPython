@@ -15,7 +15,11 @@ The repository is organized by chapters, with each chapter covered in a Jupyter 
 2. Explanatory notes to clarify key concepts and their Python implementations.
 
 Example structure:
-chapters/ ├── chapter-01.ipynb ├── chapter-02.ipynb ├── ...
+chapters/ 
+    ├── chapter-01.ipynb 
+    ├── chapter-02.ipynb 
+    ├── chapter-03.ipynb
+    ...
 
 
 ## Dependencies
