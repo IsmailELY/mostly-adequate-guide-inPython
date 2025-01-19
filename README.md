@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ## How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/professor-frisby-python.git
+   git clone https://github.com/IsmailELY/professor-frisby-python.git
 
 2.  Navigate to the desired chapter's notebook.
 
