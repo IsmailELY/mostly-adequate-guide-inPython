@@ -1,6 +1,12 @@
 from functools import reduce
 
 """
+Basic map function to apply a morphism to an array of values
+"""
+map = lambda f: lambda xs: [f(s) for s in xs] 
+
+
+"""
 Compose is a pure function used on a serie of curried functions defining a pipeline of morphism.
 
 """
