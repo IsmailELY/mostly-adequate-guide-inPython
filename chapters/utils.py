@@ -1,10 +1,5 @@
 from functools import reduce
 
-"""
-Basic map function to apply a morphism to an array of values
-"""
-map = lambda f: lambda xs: [f(s) for s in xs] 
-
 
 """
 Compose is a pure function used on a serie of curried functions defining a pipeline of morphism.
@@ -33,3 +28,23 @@ def errorHandle(f):
         except Exception as e:
             print(f'Error: {e}')
     return wrapper
+
+"""
+Curry function wraps the original function and keeps returning functions 
+until enough arguments are provided.
+
+Ex: new_f = curry(f)
+    f(a, b) = new_f(a,b) = new_f(a)(b) 
+"""
+def curry(f):
+    def curried(*args):
+        if len(args) >= f.__code__.co_argcount:
+            return f(*args)
+        return lambda *next_args: curried(*(args + next_args))
+    return curried
+
+
+"""
+Basic map function to apply a morphism to an array of values
+"""
+map = curry(lambda f, xs: [f(s) for s in xs])
