@@ -38,7 +38,7 @@ Ex: new_f = curry(f)
 """
 def curry(f):
     def curried(*args, **kwargs):
-        if len(args) >= f.__code__.co_argcount:
+        if len(args)+len(kwargs) >= f.__code__.co_argcount:
             return f(*args, **kwargs)
         return lambda *next_args, **next_kwargs: curried(
             *(args + next_args), **{**kwargs, **next_kwargs}
