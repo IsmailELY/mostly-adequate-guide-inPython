@@ -50,3 +50,12 @@ def curry(f):
 Basic map function to apply a morphism to an array of values
 """
 map = curry(lambda f, xs: [f(s) for s in xs])
+
+
+"""
+The equivalent of prop in js.
+Implemented to safely keep the context of the guide
+      prop('a', {'a': 1})
+    > 1
+"""
+prop = curry(lambda p, obj: obj[p] if p in obj else None)
